@@ -1,4 +1,5 @@
 # Learn Typescript
+
 - A popular and trusted validation library for ts: https://github.com/colinhacks/zod (9k*)
 - Move tiny things of typescript from learn-react, learn-nextjs, learn-express repos to here.
 - Exporting Types is same exporting anything else: [src](https://www.typescriptlang.org/docs/handbook/modules.html)
@@ -46,3 +47,10 @@ window.userLoggedIn = {name: 'Sahil'};
 ```
 
 - Learn typescript types in in javascript with jsdocs: [Click here](https://github.com/sahilrajput03/sahilrajput03/blob/master/@ts-check.md)
+- Enable typescript check in js projects:
+
+You can do either a workspace level or user settings level or both.
+
+Source: https://code.visualstudio.com/docs/nodejs/working-with-javascript#_type-checking-javascript
+
+*Tldr: Search for `ts-check` in VSCode settings, and enable `js/ts.implicitProjectConfig.checkJs` setting @ workspace level. Using this settings user level is also encouraged as it will show all the warnings for you at all times but since you want all users of the project to have this feature enabled by defautl you must enable this workspace level too(even if you have it enabled @ user level).*
