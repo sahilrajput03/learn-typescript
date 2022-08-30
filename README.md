@@ -16,3 +16,14 @@
 - Solution to assigning variable to window object without any error in TYPESCRIPT:
 
 ![image](https://user-images.githubusercontent.com/31458531/187341945-42ebbfe6-aecc-4f29-9ad6-e3208b819a3d.png)
+
+I used it like: 
+
+```ts
+declare global {
+	interface Window {
+		userLoggedIn: any;
+	}
+}
+window.userLoggedIn = {name: 'Sahil'};
+```
