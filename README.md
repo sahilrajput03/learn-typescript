@@ -44,3 +44,5 @@ declare global {
 }
 window.userLoggedIn = {name: 'Sahil'};
 ```
+
+- Learn typescript types in in javascript with jsdocs: [Click here](https://github.com/sahilrajput03/sahilrajput03/blob/master/@ts-check.md)
