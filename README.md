@@ -1,5 +1,5 @@
 # Learn Typescript
-
+- A popular and trusted validation library for ts: https://github.com/colinhacks/zod (9k*)
 - Move tiny things of typescript from learn-react, learn-nextjs, learn-express repos to here.
 - Exporting Types is same exporting anything else: [src](https://www.typescriptlang.org/docs/handbook/modules.html)
 
