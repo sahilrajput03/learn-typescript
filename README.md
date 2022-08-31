@@ -1,5 +1,21 @@
 # Learn Typescript
 
+- Thats how enums work in typescript:
+
+source: https://www.w3schools.com/typescript/typescript_enums.php
+
+```ts
+enum Tabs {
+	Notifications = 'notifications',
+	ChangePassword = 'change_password',
+	Help = 'help',
+}
+
+console.log(Tabs.Notifications) // notifications
+console.log(Tabs.ChangePassword) // change_password
+console.log(Tabs.Help) // help
+```
+
 - A popular and trusted validation library for ts: https://github.com/colinhacks/zod (9k*)
 - Move tiny things of typescript from learn-react, learn-nextjs, learn-express repos to here.
 - Exporting Types is same exporting anything else: [src](https://www.typescriptlang.org/docs/handbook/modules.html)
