@@ -14,6 +14,9 @@ enum Tabs {
 console.log(Tabs.Notifications) // notifications
 console.log(Tabs.ChangePassword) // change_password
 console.log(Tabs.Help) // help
+
+// for react you can use:
+const [tab, setTab] = useState<Tab>(Tab.Notifications)
 ```
 
 - A popular and trusted validation library for ts: https://github.com/colinhacks/zod (9k*)
