@@ -1,5 +1,19 @@
 # Learn Typescript
 
+- Generics in typescrpt:
+
+```ts
+let log = console.log
+type Container<T> = { value: T };
+
+let ss: Container<string>
+// ss = "coal" // throws error: Type 'string' is not assignable to type 'Container<string>' 
+// ss.value = 23 // throws error: Type 'number' is not assignable to type string.
+ss = {value: "my text"}  // works
+
+log(ss)
+```
+
 - Thats how enums work in typescript:
 
 source: https://www.w3schools.com/typescript/typescript_enums.php
