@@ -1,5 +1,11 @@
 # Learn Typescript
 
+- Getting type via *magic* from a zod validator: 
+
+Source: See source of next point in this content.
+
+![image](https://user-images.githubusercontent.com/31458531/189499387-c4f9bce2-feed-4b2f-b6f1-e5e58c9aab57.png)
+
 - Making use of validator i.e., zod for writing type safe code
 
 Source: [Click here](https://youtu.be/RmGHnYUqQ4k?t=738)
