@@ -1,5 +1,12 @@
 # Learn Typescript
 
+- Making use of validator i.e., zod for writing type safe code
+
+Source: [Click here](https://youtu.be/RmGHnYUqQ4k?t=738)
+
+![image](https://user-images.githubusercontent.com/31458531/189499296-ada048d0-3d9c-43a5-9f31-b48edd016aaa.png)
+
+
 - Generics in typescrpt:
 
 ```ts
