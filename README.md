@@ -1,5 +1,9 @@
 # Learn Typescript
 
+- Using .d.ts files in typescript
+
+![image](https://user-images.githubusercontent.com/31458531/190871516-05d00936-fcfb-411d-94b9-b808ed2b9a13.png)
+
 - Getting type via *magic* from a zod validator: 
 
 Source: See source of next point in this content.
