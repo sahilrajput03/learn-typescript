@@ -7,19 +7,17 @@
 // Got this custom type
 let contractBase = new web3Base.eth.Contract(null as any)
 export type contractType = typeof contractBase
-
 type getContractsReturnType = {
 	[key: string]: contractType
 }
-
-const getContracts = async (web3: web3Type): Promise<getContractsReturnType> => {
-	return new Promise(res => {...})
-}
-
+const getContracts = async (web3: web3Type): Promise<getContractsReturnType> => {	return new Promise(res => {...})	}
 ////////
+
 // Example: 2
 let web3Base = new Web3(null) // This is to extract type ~Sahil
 export type web3Type = typeof web3Base
+const getWeb3 = (): Promise<web3Type> => {	new Promise(res => {...}	)
+}
 ```
 
 - Using .d.ts files in typescript
