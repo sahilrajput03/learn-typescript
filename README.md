@@ -4,7 +4,7 @@
 
 ```js
 // Example: 1
-let contractBase = new web3Base.eth.Contract(null as any)
+let contractBase = new web3Base.eth.Contract([] as any)
 export type contractType = typeof contractBase
 type getContractsReturnType = {
 	[key: string]: contractType
