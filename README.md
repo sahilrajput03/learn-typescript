@@ -1,5 +1,27 @@
 # Learn Typescript
 
+- Generating types from values returned by libraries:
+
+```js
+// Example: 1
+// Got this custom type
+let contractBase = new web3Base.eth.Contract(null as any)
+export type contractType = typeof contractBase
+
+type getContractsReturnType = {
+	[key: string]: contractType
+}
+
+const getContracts = async (web3: web3Type): Promise<getContractsReturnType> => {
+	return new Promise(res => {...})
+}
+
+////////
+// Example: 2
+let web3Base = new Web3(null) // This is to extract type ~Sahil
+export type web3Type = typeof web3Base
+```
+
 - Using .d.ts files in typescript
 
 ![image](https://user-images.githubusercontent.com/31458531/190871516-05d00936-fcfb-411d-94b9-b808ed2b9a13.png)
