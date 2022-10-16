@@ -4,7 +4,6 @@
 
 ```js
 // Example: 1
-// Got this custom type
 let contractBase = new web3Base.eth.Contract(null as any)
 export type contractType = typeof contractBase
 type getContractsReturnType = {
