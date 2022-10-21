@@ -5,6 +5,7 @@
 ```js
 const k = a?.b?.c // k will be undefined if anything is undefined in this chain
 const m = a?.['some-property'] // another syntax helpful to get properties with hyphens becoz hyphen property doesn't work with `?.some-property`
+const n = a?.() // call function if it's not undefined
 ```
 
 - Generating types from existing function of libraries:
