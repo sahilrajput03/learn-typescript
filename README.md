@@ -1,5 +1,7 @@
 # Learn Typescript
 
+TODO: [Do this course](https://egghead.io/lessons/typescript-use-the-nullish-coalescing-operator-in-typescript)
+
 - Optionla chaining:
 
 ```js
