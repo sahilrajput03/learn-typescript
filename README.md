@@ -1,6 +1,6 @@
 # Learn Typescript
 
-TODO: [Do this course](https://egghead.io/lessons/typescript-use-the-nullish-coalescing-operator-in-typescript)
+- **TODO:** Typescript fundamentals on egghead (7$/month): [Click here](https://egghead.io/lessons/typescript-use-the-optional-chaining-operator-in-typescript), For now I can read articles from his blog for free: [Click here](https://mariusschulz.com/blog)
 
 - Optionla chaining:
 
