@@ -141,10 +141,6 @@ window.userLoggedIn = {name: 'Sahil'};
 
 **Enum Patterns, advantages and disadvantages:**
 
-**Actually below discussed trade off of number based enum can be solved simply by using string based enums and we can specify more meaning enum values for each enum option. Yikes** For using string enums refer below links.
-- TypeScript string enums, and when and how to use them: [Click here](https://blog.logrocket.com/typescript-string-enums-guide/)
-- How To Convert A TypeScript Enum To A JavaScript Array Or String: [Click here](https://hasnode.byrayray.dev/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string)
-
 ```txt
 # Why Enums?
 
@@ -157,6 +153,11 @@ Trade Offs (for index based enums)?:
 - Less readable in database values in database
 - If enum backing number value is changed in code, all values in database need to be updated
 ```
+
+**Actually above discussed trade off of number based enum can be solved simply by using string based enums and we can specify more meaning enum values for each enum option. Yikes** For using string enums refer below links.
+- TypeScript string enums, and when and how to use them: [Click here](https://blog.logrocket.com/typescript-string-enums-guide/)
+- How To Convert A TypeScript Enum To A JavaScript Array Or String: [Click here](https://hasnode.byrayray.dev/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string)
+
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
 Typescriptlang Playground: [Click here](https://www.typescriptlang.org/play?&q=301#code/PTAEGUBcCcEsDsDmoCm8CuBbAzgWAFBpagDiAhpigApkAmAkvAA7qSgDeBooAqk6AF5QAIh5VhAGi6gAIgHsA7vEEiZAeQDqAOUnSAMigBmbIcL0BRAGIAVXfm4AlWIgAWJkQ-okAEran4AXwICAGM5eGw5ABsUADoouUQACnJKGgZmVli+AEpQ8MiY+MSUimo6RhZIWPklPPwCEFBENBRoMijUDBwCIkxQAGE5TCYybGwZWGgUEMhYcI5pLTloSBd-bnMxyA2IOVZ16Q0UbB2CIIb8MIjouITkoZGxiamZufDY5dWXeuvCu5Kj1G40m01m83gsXA+zW9SAA)
