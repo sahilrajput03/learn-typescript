@@ -143,7 +143,7 @@ window.userLoggedIn = {name: 'Sahil'};
 
 Check below code in ts playgorund: [Click here](https://www.typescriptlang.org/play#code/PTAEBECcHsAcBNoHcB2oDysAuBLaKBnAWACgRQAhAUxSoDMcsCAuU8gRgDpQB1K0AMYBDNAGEAEgEEAcgHEAoqAA2QgEZUlBUPByQqArEoCeoaHVB0YKLDXigkjABbQArllCq9QgNY4UAc1ARIyxHP382MAAmbklwcGAAJXkAWXQANUVaJFBvKiMAWgA3ISUXflghXS0dPQNjCxgAWw8hATyUOxE7S3wbTsERQXwCFyb+RiCBAWhIHQCGyN5JROkASTlmUGkqIqpIQUcRf35Q-jyTFCFxrTMPDWRTVQArfXchLUnhND1RpXc-KAmjgCE0hFgBI4qPBgPBjkpwqASmUqMQSDNCO5VNB4EYACpGWD8AC8oAA3qRQKA8eINlsAER4sIoekAGkpoEkmUSkgUDMke0gQhObI5ADE1niAPopACqAGVRLKADIrBliyZgFIuAgCFwqSCikhU5WSvHK+RS+QADTxPP5ykYhn4VAAHlghUaTSsFFKAArKhVS+VrABa8gZyqEkBOoDAfrKWnlOAAXlQjQBfUikDEEdzwGCwcDIFCYXAjUCk9AvN6cGgenCogAU2NxBKJAEpOGDYE2mwBtZHlVnKNQaAC6HcrAD5QE2ySp1EoR0OqBmOx3s+iRtAlFROEpoP4mwByODlwgAfhPI4LcGLqDLeEIm5ISzFzSCsBw9n431ABC2KY2DPlo3SNH0QH-pUkCAaAkxtDMczhMYSy-JwgGdE2ABS8roNIGENgEOB0EYTZ3kWJZPiMG6kEAA)
 
-```
+```ts
 // Dropdown Options
 // Benefits:
 // 1. We can CHANGE labels directly of frontend without breaking anything
@@ -160,6 +160,11 @@ const bodyType = {
 const dropDownOptions = Object.entries(bodyType).map(([value, label]) => ({label, value}))
 
 console.log('options?', dropDownOptions)
+
+type bodyTypeValue = keyof typeof bodyType;
+let person1: bodyTypeValue = 'LARGE_PLUS_SIZE' // gives autocomplete as well
+// Below throws error
+let person2: bodyTypeValue = 'something else?'
 
 // From api we can send options and frontend can parse it accordingly
 // res.send(JSON.stringify(dropDownOptions))
