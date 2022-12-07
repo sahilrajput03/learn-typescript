@@ -180,7 +180,7 @@ Trade Offs (for index based enums)?:
 - If enum backing number value is changed in code, all values in database need to be updated
 ```
 
-**Actually above discussed trade off of number based enum can be solved simply by using string based enums and we can specify more meaning enum values for each enum option. Yikes** For using string enums refer below links.
+**UPDATE: 7 Dec, 2022: Actually above discussed trade off of number based enum can be solved simply by using string based enums and we can specify more meaning enum values for each enum option. Yikes** For using string enums refer below links.
 - TypeScript string enums, and when and how to use them: [Click here](https://blog.logrocket.com/typescript-string-enums-guide/)
 - How To Convert A TypeScript Enum To A JavaScript Array Or String: [Click here](https://hasnode.byrayray.dev/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string)
 
