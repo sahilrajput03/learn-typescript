@@ -166,7 +166,7 @@ console.log('options?', dropDownOptions)
 ```
 ## Enums? Bad/Good?
 
-Please see **## Enumbs vs. objects?** section above for more advanced levaraging power of enum like structure from the just plain objects.**
+Please see **Enumbs vs. objects?** section above for more advanced levaraging power of enum like structure from the just plain objects.**
 
 **Enum Patterns, advantages and disadvantages:**
 
