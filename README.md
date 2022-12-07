@@ -137,9 +137,9 @@ window.userLoggedIn = {name: 'Sahil'};
 
 	*Tldr: Search for `ts-check` in VSCode settings, and enable `js/ts.implicitProjectConfig.checkJs` setting @ workspace level. Using this settings user level is also encouraged as it will show all the warnings for you at all times but since you want all users of the project to have this feature enabled by defautl you must enable this workspace level too(even if you have it enabled @ user level).*
 
-## Enums? Bad/Good?
+## Enumbs vs. objects?
 
-**Actually I think objects are better fit, for e.g.,**
+**Enums are good but I am considering advantage of 1. sharing the options(label,value) pairs directly from the backend, 2. we can control label values from the backend, 3. Removing a key-value pair is very easy as it won't result in dangling pointer values(coz enums are by default 0,1,2,etc indices only). Actually I think objects are better fit, for e.g.,**
 
 Check below code in ts playgorund: [Click here](https://www.typescriptlang.org/play#code/PTAEBECcHsAcBNoHcB2oDysAuBLaKBnAWACgRQAhAUxSoDMcsCAuU8gRgDpQB1K0AMYBDNAGEAEgEEAcgHEAoqAA2QgEZUlBUPByQqArEoCeoaHVB0YKLDXigkjABbQArllCq9QgNY4UAc1ARIyxHP382MAAmbklwcGAAJXkAWXQANUVaJFBvKiMAWgA3ISUXflghXS0dPQNjCxgAWw8hATyUOxE7S3wbTsERQXwCFyb+RiCBAWhIHQCGyN5JROkASTlmUGkqIqpIQUcRf35Q-jyTFCFxrTMPDWRTVQArfXchLUnhND1RpXc-KAmjgCE0hFgBI4qPBgPBjkpwqASmUqMQSDNCO5VNB4EYACpGWD8AC8oAA3qRQKA8eINlsAER4sIoekAGkpoEkmUSkgUDMke0gQhObI5ADE1niAPopACqAGVRLKADIrBliyZgFIuAgCFwqSCikhU5WSvHK+RS+QADTxPP5ykYhn4VAAHlghUaTSsFFKAArKhVS+VrABa8gZyqEkBOoDAfrKWnlOAAXlQjQBfUikDEEdzwGCwcDIFCYXAjUCk9AvN6cGgenCogAU2NxBKJAEpOGDYE2mwBtZHlVnKNQaAC6HcrAD5QE2ySp1EoR0OqBmOx3s+iRtAlFROEpoP4mwByODlwgAfhPI4LcGLqDLeEIm5ISzFzSCsBw9n431ABC2KY2DPlo3SNH0QH-pUkCAaAkxtDMczhMYSy-JwgGdE2ABS8roNIGENgEOB0EYTZ3kWJZPiMG6kEAA)
 
@@ -164,6 +164,9 @@ console.log('options?', dropDownOptions)
 // From api we can send options and frontend can parse it accordingly
 // res.send(JSON.stringify(dropDownOptions))
 ```
+## Enums? Bad/Good?
+
+Please see **## Enumbs vs. objects?** section above for more advanced levaraging power of enum like structure from the just plain objects.**
 
 **Enum Patterns, advantages and disadvantages:**
 
