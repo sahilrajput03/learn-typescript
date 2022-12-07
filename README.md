@@ -139,6 +139,32 @@ window.userLoggedIn = {name: 'Sahil'};
 
 ## Enums? Bad/Good?
 
+**Actually I think objects are better fit, for e.g.,**
+
+Check below code in ts playgorund: [Click here](https://www.typescriptlang.org/play#code/PTAEBECcHsAcBNoHcB2oDysAuBLaKBnAWACgRQAhAUxSoDMcsCAuU8gRgDpQB1K0AMYBDNAGEAEgEEAcgHEAoqAA2QgEZUlBUPByQqArEoCeoaHVB0YKLDXigkjABbQArllCq9QgNY4UAc1ARIyxHP382MAAmbklwcGAAJXkAWXQANUVaJFBvKiMAWgA3ISUXflghXS0dPQNjCxgAWw8hATyUOxE7S3wbTsERQXwCFyb+RiCBAWhIHQCGyN5JROkASTlmUGkqIqpIQUcRf35Q-jyTFCFxrTMPDWRTVQArfXchLUnhND1RpXc-KAmjgCE0hFgBI4qPBgPBjkpwqASmUqMQSDNCO5VNB4EYACpGWD8AC8oAA3qRQKA8eINlsAER4sIoekAGkpoEkmUSkgUDMke0gQhObI5ADE1niAPopACqAGVRLKADIrBliyZgFIuAgCFwqSCikhU5WSvHK+RS+QADTxPP5ykYhn4VAAHlghUaTSsFFKAArKhVS+VrABa8gZyqEkBOoDAfrKWnlOAAXlQjQBfUikDEEdzwGCwcDIFCYXAjUCk9AvN6cGgenCogAU2NxBKJAEpOGDYE2mwBtZHlVnKNQaAC6HcrAD5QE2ySp1EoR0OqBmOx3s+iRtAlFROEpoP4mwByODlwgAfhPI4LcGLqDLeEIm5ISzFzSCsBw9n431ABC2KY2DPlo3SNH0QH-pUkCAaAkxtDMczhMYSy-JwgGdE2ABS8roNIGENgEOB0EYTZ3kWJZPiMG6kEAA)
+
+```
+// Dropdown Options
+// Benefits:
+// 1. We can CHANGE labels directly of frontend without breaking anything
+// 2. ADD/REMOVE new key-value pairs directly from backend and frontend can consume it accordingly 
+// WARNING: Never change the key names of below object as it can result in mismatched/dangling values
+const bodyType = {
+  THIN: "Thin",
+  AVERAGE: "Average",
+  FIT_MUSCULAR: "Fit / Muscular",
+  LITTLE_EXTRA: "A little extra",
+  LARGE_PLUS_SIZE: "Large / Plus Size",
+}
+
+const dropDownOptions = Object.entries(bodyType).map(([value, label]) => ({label, value}))
+
+console.log('options?', dropDownOptions)
+
+// From api we can send options and frontend can parse it accordingly
+// res.send(JSON.stringify(dropDownOptions))
+```
+
 **Enum Patterns, advantages and disadvantages:**
 
 ```txt
