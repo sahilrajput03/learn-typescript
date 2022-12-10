@@ -220,7 +220,7 @@ type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
 type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is required now. WARNING:  Optional fields of original wiil be set required as well. (for e.g., dietary)
 ```
 
-**`Record`, `Pick`, `Omit`**
+**`Record`, `Pick`, `Omit`**, getting particular type from existing `type`
 
 ```ts
 let list: Record<string, number> = {
@@ -234,6 +234,7 @@ type personType = {
   age?: number
 }
 
+// getting particular type from existing `type`
 type idType = personType["id"]
 type nameType = personType["name"]
 type ageType = personType["age"] // *not required* i.e., type ageType = number | undefined
