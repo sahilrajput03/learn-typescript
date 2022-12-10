@@ -205,9 +205,11 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
 
-## `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘
+## UTILITY TYPES: By jack Herrington `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘
 
 [Leran from Jack Herrington](https://www.youtube.com/watch?v=tD7DM99nH30)
+
+**Typescript Docs - Utility Types:** [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
 **`Partial`, `Required`**
 
@@ -269,4 +271,9 @@ Regular Expression type:
 
 ```ts
 let k: RegExp = /car/
+
+// Array types
+let a: string[]
+let b: Array<string> // defining type using generic type
 ```
+
