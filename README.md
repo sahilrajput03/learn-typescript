@@ -202,9 +202,11 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
 
-## `Partial`, `Requried`, `Record`
+## `Partial`, `Requried`, `Record`, `Pick`, `Omit`
 
 [Leran from Jack Herrington](https://www.youtube.com/watch?v=tD7DM99nH30)
+
+**`Partial`, `Required`**
 
 ```ts
 interface Dog {
@@ -218,6 +220,8 @@ type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
 type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is compulsory(including the optional *dietary* field )
 ```
 
+**`Record`, `Pick`, `Omit`**
+
 ```ts
 let list: Record<string, number> = {
   'foo': 1,
@@ -225,9 +229,12 @@ let list: Record<string, number> = {
 }
 
 type personType = {
+  id: string,
   name: string,
-  age: number
+  age?: number
 }
+
+type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys keeping the optional property if they have e.g., age
 
 type personListByIdType = Record<string, personType>
 
