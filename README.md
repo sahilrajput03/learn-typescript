@@ -234,6 +234,10 @@ type personType = {
   age?: number
 }
 
+type idType = personType["id"]
+type nameType = personType["name"]
+type ageType = personType["age"] // *not required* i.e., type ageType = number | undefined
+
 type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys. Keeps optional property type. (e.g., age)
 type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys. Keeps optional property type. (e.g., age)
 
