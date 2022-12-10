@@ -1,5 +1,34 @@
 # Learn Typescript
 
+**Utility Types:**
+
+Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+
+```txt
+Awaited<Type>
+Partial<Type>
+Required<Type>
+Readonly<Type>
+Record<Keys, Type>
+Pick<Type, Keys>
+Omit<Type, Keys>
+Exclude<UnionType, ExcludedMembers>
+Extract<Type, Union>
+NonNullable<Type>
+Parameters<Type>
+ConstructorParameters<Type>
+ReturnType<Type>
+InstanceType<Type>
+ThisParameterType<Type>
+OmitThisParameter<Type>
+ThisType<Type>
+Intrinsic String Manipulation Types
+Uppercase<StringType>
+Lowercase<StringType>
+Capitalize<StringType>
+Uncapitalize<StringType>
+```
+
 **Best Typescript Courses:**
 - From Jack Herrington: [No BS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n)
 
@@ -305,3 +334,6 @@ const myNewMutateFunc: MutationFunction = (v: number) => v * 100;
 
 **#4**
 
+```ts
+
+```
