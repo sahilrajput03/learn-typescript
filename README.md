@@ -202,7 +202,7 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
 
-## `Partial` and `Requried`
+## `Partial`, `Requried`, `Record`
 
 [Leran from Jack Herrington](https://www.youtube.com/watch?v=tD7DM99nH30)
 
@@ -216,4 +216,29 @@ interface Dog {
 
 type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
 type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is compulsory(including the optional *dietary* field )
+```
+
+```ts
+let list: Record<string, number> = {
+  'foo': 1,
+  'bar': 2,
+}
+
+type personType = {
+  name: string,
+  age: number
+}
+
+type personListType = Record<string, personType>
+
+let personList: personListType = {
+  'vjhth4fsg': {
+    name: 'sahli',
+    age: 10
+  },
+  'if3h5': {
+    name: 'John',
+    age: 35
+  }
+}
 ```
