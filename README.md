@@ -260,3 +260,13 @@ let personListById: personListByIdType = {
   }
 }
 ```
+
+## No BS TS by Jack Herrington
+
+**#1**
+
+Regular Expression type:
+
+```ts
+let k: RegExp = /car/
+```
