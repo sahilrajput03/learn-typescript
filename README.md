@@ -229,14 +229,16 @@ type personType = {
   age: number
 }
 
-type personListType = Record<string, personType>
+type personListById = Record<string, personType>
 
 let personList: personListType = {
   'vjhth4fsg': {
+    id: 'vjhth4fsg',
     name: 'sahli',
     age: 10
   },
   'if3h5': {
+    id: 'if3h5',
     name: 'John',
     age: 35
   }
