@@ -234,7 +234,8 @@ type personType = {
   age?: number
 }
 
-type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys keeping the optional property if they have e.g., age
+type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys. Keeps optional property type. (e.g., age)
+type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys. Keeps optional property type. (e.g., age)
 
 type personListByIdType = Record<string, personType>
 
