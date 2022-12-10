@@ -1,5 +1,9 @@
 # Learn Typescript
 
+**Tips:**
+- From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
+
+
 - **TODO:** Typescript fundamentals on egghead (7$/month): [Click here](https://egghead.io/lessons/typescript-use-the-optional-chaining-operator-in-typescript).
 	- Blog & Articles: [Click here](https://mariusschulz.com/blog)
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
@@ -195,3 +199,19 @@ Trade Offs (for index based enums)?:
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
 Typescriptlang Playground: [Click here](https://www.typescriptlang.org/play?&q=301#code/PTAEGUBcCcEsDsDmoCm8CuBbAzgWAFBpagDiAhpigApkAmAkvAA7qSgDeBooAqk6AF5QAIh5VhAGi6gAIgHsA7vEEiZAeQDqAOUnSAMigBmbIcL0BRAGIAVXfm4AlWIgAWJkQ-okAEran4AXwICAGM5eGw5ABsUADoouUQACnJKGgZmVli+AEpQ8MiY+MSUimo6RhZIWPklPPwCEFBENBRoMijUDBwCIkxQAGE5TCYybGwZWGgUEMhYcI5pLTloSBd-bnMxyA2IOVZ16Q0UbB2CIIb8MIjouITkoZGxiamZufDY5dWXeuvCu5Kj1G40m01m83gsXA+zW9SAA)
+
+## `Partial` and `Requried`
+
+[Leran from Jack Herrington](https://www.youtube.com/watch?v=tD7DM99nH30)
+
+```ts
+interface Dog {
+  name: string;
+  age: number;
+  breed: string;
+  dietary?: string;
+}
+
+type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
+type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is compulsory
+```
