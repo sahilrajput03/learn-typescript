@@ -1,5 +1,8 @@
 # Learn Typescript
 
+**Best Typescript Courses:**
+- From Jack Herrington: [No BS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n)
+
 **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
