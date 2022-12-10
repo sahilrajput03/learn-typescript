@@ -217,7 +217,7 @@ interface Dog {
 }
 
 type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
-type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is compulsory(including the optional *dietary* field )
+type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is required now. WARNING:  Optional fields of original wiil be set required. (for e.g., dietary)
 ```
 
 **`Record`, `Pick`, `Omit`**
