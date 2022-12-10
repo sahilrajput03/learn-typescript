@@ -222,7 +222,7 @@ interface Dog {
 }
 
 type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
-type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is required now. WARNING:  Optional fields of original wiil be set required as well. (for e.g., dietary)
+type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is required now. *WARNING*:  Optional fields of original wiil be set required as well. (for e.g., dietary)
 ```
 
 **`Record`, `Pick`, `Omit`**, getting particular type from existing `type`
@@ -267,7 +267,7 @@ let personListById: personListByIdType = {
 
 **#1**
 
-Regular Expression type:
+Regular Expression type and defining Array types
 
 ```ts
 let k: RegExp = /car/
@@ -276,4 +276,32 @@ let k: RegExp = /car/
 let a: string[]
 let b: Array<string> // defining type using generic type
 ```
+
+**#3**
+
+Types around functions
+
+```ts
+export const format = (title: string, param: string | number): string =>
+  `${title} ${param}`;
+
+// for a funciton not returning anything we can use `void` as return type
+export const printFormat = (title: string, param: string | number): void => {
+  console.log(format(title, param));
+};
+
+function introduce(salutation: string, ...names: string[]): string {
+  return `${salutation} ${names.join(" ")}`;
+}
+
+export function getName(user: { first: string; last: string }): string {
+  return `${user?.first ?? "first"} ${user?.last ?? "last"}`;
+}
+
+// explicit function type
+export type MutationFunction = (v: number) => number;
+const myNewMutateFunc: MutationFunction = (v: number) => v * 100;
+```
+
+**#4**
 
