@@ -227,8 +227,9 @@ interface Dog {
   dietary?: string;
 }
 
-type AnyDog = Partial<Dog>; // All properties of `AnyDog` type is optional
-type RequiredDog = Required<Dog>; // All properties of `RequiredDog` type is required now. *WARNING*:  Optional fields of original wiil be set required as well. (for e.g., dietary)
+type AnyDog = Partial<Dog>; // All fields of `AnyDog` type are optional
+type RequiredDog = Required<Dog>; // All fields of `RequiredDog` type are required (including optional fields). 
+//LEARN: `Required` is opposite of `Partial` Utility Type
 ```
 
 **`Record`, `Pick`, `Omit`**, getting particular type from existing `type`
@@ -250,8 +251,8 @@ type idType = personType["id"]
 type nameType = personType["name"]
 type ageType = personType["age"] // *not required* i.e., type ageType = number | undefined
 
-type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys. Keeps optional property type. (e.g., age)
-type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys. Keeps optional property type. (e.g., age)
+type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys (keeps optional property type e.g., age).
+type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys (keeps optional property type e.g., age).
 
 type personListByIdType = Record<string, personType>
 
@@ -280,7 +281,7 @@ let k: RegExp = /car/
 
 // Array types
 let a: string[]
-let b: Array<string> // defining type using generic type
+let b: Array<string> // defining type with generic type
 ```
 
 **#3**
