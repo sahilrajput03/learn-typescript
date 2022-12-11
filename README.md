@@ -403,3 +403,42 @@ console.log(
 
 console.log(findHouses(houses, ({ name }) => name === "Harkonnen"));
 ```
+
+**#5**
+Optional fields, optional parameteres and optional calls
+	
+Learn: A required param cannot be placed after an optional param. I.e.,
+	
+![image](https://user-images.githubusercontent.com/31458531/206898661-16011d6e-c559-4be2-b617-c26aca1ba63a.png)
+
+```ts
+function printIngredient(quantity: string, ingredient: string, extra?: string) {
+  console.log(`${quantity} ${ingredient} ${extra ? ` ${extra}` : ""}`);
+}
+
+printIngredient("1C", "Flour");
+printIngredient("1C", "Sugar", "something more");
+
+interface User {
+  id: string;
+  info?: {
+    email?: string;
+  };
+}
+
+function getEmail(user: User): string {
+  if (user.info) {
+    return user.info.email!; // Note the usage of ! here to tell typescript I know what I'm doing.
+  }
+  return "";
+}
+
+function getEmailEasy(user: User): string {
+  return user?.info?.email ?? ""; // Using Nullish coalescing operator
+}
+
+function addWithCallback(x: number, y: number, callback?: () => void) {
+  console.log([x, y]);
+  callback?.();
+}	
+```
