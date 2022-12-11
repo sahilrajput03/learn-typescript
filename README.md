@@ -623,7 +623,24 @@ let personListById: personListByIdType = {
 
 - `readonly` allows you to make the properties of a interface immutable.	
 - `const` allows you to make the values of the tuple immutable (i.e, array's elements) 
-	
+
+```ts
+interface carType {
+    name: string
+    readonly engine: string
+}
+
+let lambo: carType = {
+    name: 'lamborgini',
+    engine: 'bs6'
+}
+
+lambo.name = 'lamborgini sports'
+// lambo.engine = 'bs4' // Cannot assign to 'engine' because it is a read-only property.	
+```
+
+- From BS TS:
+
 ```ts
 interface Cat {
   name: string;
