@@ -551,5 +551,26 @@ console.log(ranks);
 Make `forEach`, `map` and `filter` javascript methods using reduce method.
 	
 ```ts
-	
+// CHALLENGE #2: Make `forEach`, `filter` and `map` using reduce function only
+
+function myForEach<T>(items: T[], forEachFunc: (item: T) => void) : void{
+    items.reduce((_, v: T) => {
+        forEachFunc(v)
+        return undefined
+    }, undefined)
+}
+// myForEach([1,3,6], (value) => console.log(value))
+
+function myFilter<T>(items: T[], filterFunc: (item: T) => boolean) : boolean[] {
+    return items.reduce((a:boolean[], v: T) => [...a, filterFunc(v)], [])
+}
+// console.log(myFilter([1,3,6], (value) => value > 2))
+
+
+function myMap<T, K>(items: T[], mapFunc: (item: T) => K) : K[] {
+    return items.reduce((a: K[], v: T) => [...a, mapFunc(v)], [])
+}
+let newValues = myMap([1,3,6], (value) => String(value * 2))
+// You can check in editor that typescript has assigned type as string[] to newValues.
+// console.log(newValues)
 ```
