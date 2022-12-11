@@ -546,7 +546,7 @@ const ranks = ranker(pokemon, ({ hp }) => hp);
 console.log(ranks);
 ```
 	
-**#8**
+**#2 Challenge**
 	
 Make `forEach`, `map` and `filter` javascript methods using reduce method.
 	
@@ -573,4 +573,49 @@ function myMap<T, K>(items: T[], mapFunc: (item: T) => K) : K[] {
 let newValues = myMap([1,3,6], (value) => String(value * 2))
 // You can check in editor that typescript has assigned type as string[] to newValues.
 // console.log(newValues)
+```
+
+**#8**
+	
+Generic Types and `extends keyof`
+	
+```ts
+function pluck<DataType, KeyType extends keyof DataType>(
+  items: DataType[],
+  key: KeyType
+): DataType[KeyType][] {
+  return items.map((item) => item[key]);
+}
+
+const dogs = [
+  { name: "Mimi", age: 12 },
+  { name: "LG", age: 13 },
+];
+
+console.log(pluck(dogs, "age"));
+console.log(pluck(dogs, "name"));
+
+interface BaseEvent {
+  time: number;
+  user: string;
+}
+interface EventMap {
+  addToCart: BaseEvent & { quantity: number; productID: string };
+  checkout: BaseEvent;
+}
+
+function sendEvent<Name extends keyof EventMap>(
+  name: Name,
+  data: EventMap[Name]
+): void {
+  console.log([name, data]);
+}
+
+sendEvent("addToCart", {
+  productID: "foo",
+  user: "baz",
+  quantity: 1,
+  time: 10,
+});
+sendEvent("checkout", { time: 20, user: "bob" });
 ```
