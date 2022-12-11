@@ -548,3 +548,8 @@ console.log(ranks);
 	
 **#8**
 	
+Make `forEach`, `map` and `filter` javascript methods using reduce method.
+	
+```ts
+	
+```
