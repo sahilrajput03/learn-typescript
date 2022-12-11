@@ -358,7 +358,7 @@ console.log(parseCoordinate({ x: 52, y: 35 }));
 console.log(parseCoordinate("x:12,y:22"));
 ```
 
-**challenge:**
+**Challenge #1:**
 - Learn usage of indexOf in javascript:
 	
 ![image](https://user-images.githubusercontent.com/31458531/206897640-6b62a14d-ea5d-439b-af6a-dcb705df5935.png)
