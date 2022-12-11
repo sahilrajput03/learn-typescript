@@ -210,66 +210,6 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
-
-## UTILITY TYPES: By jack Herrington `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘
-
-[Leran from Jack Herrington](https://www.youtube.com/watch?v=tD7DM99nH30)
-
-**Typescript Docs - Utility Types:** [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
-
-**`Partial`, `Required`**
-
-```ts
-interface Dog {
-  name: string;
-  age: number;
-  breed: string;
-  dietary?: string;
-}
-
-type AnyDog = Partial<Dog>; // All fields of `AnyDog` type are optional
-type RequiredDog = Required<Dog>; // All fields of `RequiredDog` type are required (including optional fields). 
-//LEARN: `Required` is opposite of `Partial` Utility Type
-```
-
-**`Record`, `Pick`, `Omit`**, getting particular type from existing `type`
-
-```ts
-let list: Record<string, number> = {
-  'foo': 1,
-  'bar': 2,
-}
-
-type personType = {
-  id: string,
-  name: string,
-  age?: number
-}
-
-// getting particular type from existing `type`
-type idType = personType["id"]
-type nameType = personType["name"]
-type ageType = personType["age"] // *not required* i.e., type ageType = number | undefined
-
-type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys (keeps optional property type e.g., age).
-type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys (keeps optional property type e.g., age).
-
-type personListByIdType = Record<string, personType>
-
-let personListById: personListByIdType = {
-  'vjhth4fsg': {
-    id: 'vjhth4fsg',
-    name: 'sahli',
-    age: 10
-  },
-  'if3h5': {
-    id: 'if3h5',
-    name: 'John',
-    age: 35
-  }
-}
-```
-
 ## No BS TS by Jack Herrington
 
 **#1**
@@ -618,4 +558,63 @@ sendEvent("addToCart", {
   time: 10,
 });
 sendEvent("checkout", { time: 20, user: "bob" });
+```
+
+**#9**
+
+UTILITY TYPES: `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘
+
+**Typescript Docs - Utility Types:** [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+
+**`Partial`, `Required`**
+
+```ts
+interface Dog {
+  name: string;
+  age: number;
+  breed: string;
+  dietary?: string;
+}
+
+type AnyDog = Partial<Dog>; // All fields of `AnyDog` type are optional
+type RequiredDog = Required<Dog>; // All fields of `RequiredDog` type are required (including optional fields). 
+//LEARN: `Required` is opposite of `Partial` Utility Type
+```
+
+**`Record`, `Pick`, `Omit`**, getting particular type from existing `type`
+
+```ts
+let list: Record<string, number> = {
+  'foo': 1,
+  'bar': 2,
+}
+
+type personType = {
+  id: string,
+  name: string,
+  age?: number
+}
+
+// getting particular type from existing `type`
+type idType = personType["id"]
+type nameType = personType["name"]
+type ageType = personType["age"] // *not required* i.e., type ageType = number | undefined
+
+type JustEmailAndNameType = Pick<personType, "name" | "age"> // Pick picks up the name and age keys (keeps optional property type e.g., age).
+type exceptNameAndId = Pick<personType, "name" | "id"> // Omit omits name and id keys (keeps optional property type e.g., age).
+
+type personListByIdType = Record<string, personType>
+
+let personListById: personListByIdType = {
+  'vjhth4fsg': {
+    id: 'vjhth4fsg',
+    name: 'sahli',
+    age: 10
+  },
+  'if3h5': {
+    id: 'if3h5',
+    name: 'John',
+    age: 35
+  }
+}
 ```
