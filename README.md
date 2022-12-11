@@ -459,9 +459,11 @@ function add3DCoordinate(
 
 console.log(add3DCoordinate([0, 100, 0], [10, 20, 30]));
 
+type ReturnTuple = [() => string, (v: string) => void]
+
 function simpleStringState(
   initial: string
-): [() => string, (v: string) => void] {
+): ReturnTuple {
   let str: string = initial;
   return [
     () => str,
