@@ -210,6 +210,69 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
+## protected (simulated) and `private` in javascript classes
+			   
+***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
+
+Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
+
+			   
+```ts
+class CoffeeMachine {
+  _waterAmount = 0;
+
+  // Note whenever you'll try to set property `waterAmount` of the instace this method will be called with assigning values as the parameter value
+  set waterAmount(value) {
+    if (value < 0) {
+      value = 0;
+    }
+    this._waterAmount = value;
+  }
+
+  // Note whenever you'll try to get property `waterAmount` of the instace this method will be called and the return value will act as the property value
+  get waterAmount() {
+    return this._waterAmount;
+  }
+
+  constructor(power) {
+    this._power = power;
+  }
+
+}
+
+// create the coffee machine
+let coffeeMachine = new CoffeeMachine(100);
+
+// Add water
+coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
+```
+
+***Private Behaviour of the class properties:***
+			   
+Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
+
+```ts
+class CoffeeMachine {
+  #waterLimit = 200;
+
+  #fixWaterAmount(value) {
+    if (value < 0) return 0;
+    if (value > this.#waterLimit) return this.#waterLimit;
+  }
+
+  setWaterAmount(value) {
+    this.#waterLimit = this.#fixWaterAmount(value);
+  }
+
+}
+
+let coffeeMachine = new CoffeeMachine();
+
+// can't access privates from outside of the class
+coffeeMachine.#fixWaterAmount(123); // Error
+coffeeMachine.#waterLimit = 1000; // Error			   
+```
+	
 ## No BS TS by Jack Herrington
 
 **#1**
@@ -720,63 +783,46 @@ sendEvent("addToCart", { productId: 123123 });
 Member types in class: private, protected and public(this is default if not specified explicitly).
 
 
-***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
-
-Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
-
-			   
 ```ts
-class CoffeeMachine {
-  _waterAmount = 0;
-
-  // Note whenever you'll try to set property `waterAmount` of the instace this method will be called with assigning values as the parameter value
-  set waterAmount(value) {
-    if (value < 0) {
-      value = 0;
-    }
-    this._waterAmount = value;
-  }
-
-  // Note whenever you'll try to get property `waterAmount` of the instace this method will be called and the return value will act as the property value
-  get waterAmount() {
-    return this._waterAmount;
-  }
-
-  constructor(power) {
-    this._power = power;
-  }
-
+interface Database {
+  get(id: string): string;
+  set(id: string, value: string): void;
 }
 
-// create the coffee machine
-let coffeeMachine = new CoffeeMachine(100);
-
-// Add water
-coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
-```
-
-***Private Behaviour of the class properties:***
-			   
-Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
-
-```ts
-class CoffeeMachine {
-  #waterLimit = 200;
-
-  #fixWaterAmount(value) {
-    if (value < 0) return 0;
-    if (value > this.#waterLimit) return this.#waterLimit;
-  }
-
-  setWaterAmount(value) {
-    this.#waterLimit = this.#fixWaterAmount(value);
-  }
-
+interface Persistable {
+  saveToString(): string;
+  restoreFromString(storedState: string): void;
 }
 
-let coffeeMachine = new CoffeeMachine();
+class InMemoryDatabase implements Database {
+  protected db: Record<string, string> = {};
+  get(id: string): string {
+    return this.db[id];
+  }
+  set(id: string, value: string): void {
+    this.db[id] = value;
+  }
+}
 
-// can't access privates from outside of the class
-coffeeMachine.#fixWaterAmount(123); // Error
-coffeeMachine.#waterLimit = 1000; // Error			   
+class PersistentMemoryDB extends InMemoryDatabase implements Persistable {
+  saveToString(): string {
+    return JSON.stringify(this.db);
+  }
+  restoreFromString(storedState: string): void {
+    this.db = JSON.parse(storedState);
+  }
+}
+
+const myDB = new PersistentMemoryDB();
+myDB.set("foo", "bar");
+// myDB.db["foo"] = "baz";
+console.log(myDB.get("foo"));
+const saved = myDB.saveToString();
+myDB.set("foo", "db1 - bar");
+
+const myDB2 = new PersistentMemoryDB();
+myDB2.restoreFromString(saved);
+console.log(myDB2.get("foo"));			   
 ```
+
+	
