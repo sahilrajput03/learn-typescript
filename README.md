@@ -829,3 +829,5 @@ console.log(myDB2.get("foo"));
 ```
 
 	
+
+**TODO: Continue from video 13: [Click here](https://www.youtube.com/watch?v=_ZnNZWlyw7M&list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n&index=15)**
