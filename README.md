@@ -721,6 +721,8 @@ Member types in class: private, protected and public(this is default if not spec
 
 Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
 
+***Protected Behaviour for the class proerties:***
+			   
 ```ts
 class CoffeeMachine {
   _waterAmount = 0;
@@ -750,4 +752,29 @@ let coffeeMachine = new CoffeeMachine(100);
 // Add water
 coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
 ```
+
+***Private Behaviour of the class properties:***
 			   
+Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
+
+```ts
+class CoffeeMachine {
+  #waterLimit = 200;
+
+  #fixWaterAmount(value) {
+    if (value < 0) return 0;
+    if (value > this.#waterLimit) return this.#waterLimit;
+  }
+
+  setWaterAmount(value) {
+    this.#waterLimit = this.#fixWaterAmount(value);
+  }
+
+}
+
+let coffeeMachine = new CoffeeMachine();
+
+// can't access privates from outside of the class
+coffeeMachine.#fixWaterAmount(123); // Error
+coffeeMachine.#waterLimit = 1000; // Error			   
+```
