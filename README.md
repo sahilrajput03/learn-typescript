@@ -719,9 +719,11 @@ sendEvent("addToCart", { productId: 123123 });
 			   
 Member types in class: private, protected and public(this is default if not specified explicitly).
 
+
+***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
+
 Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
 
-***Protected Behaviour for the class proerties:***
 			   
 ```ts
 class CoffeeMachine {
