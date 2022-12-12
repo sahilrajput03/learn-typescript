@@ -779,8 +779,11 @@ sendEvent("addToCart", { productId: 123123 });
 ```
 
 **#12**
+		
+Typescript Classes; Member Visibility and Implements
 			   
-Member types in class: private, protected and public(this is default if not specified explicitly).
+- FYI: Member types in class: private, protected and publi
+- Default visibility is public.
 
 
 ```ts
