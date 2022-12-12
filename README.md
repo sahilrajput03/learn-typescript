@@ -714,3 +714,40 @@ function sendEvent(name: string, data: unknown): void {
 
 sendEvent("addToCart", { productId: 123123 });
 ```
+
+**#12**
+			   
+Member types in class: private, protected and public(this is default if not specified explicitly).
+
+Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
+
+```ts
+class CoffeeMachine {
+  _waterAmount = 0;
+
+  // Note whenever you'll try to set property `waterAmount` of the instace this method will be called with assigning values as the parameter value
+  set waterAmount(value) {
+    if (value < 0) {
+      value = 0;
+    }
+    this._waterAmount = value;
+  }
+
+  // Note whenever you'll try to get property `waterAmount` of the instace this method will be called and the return value will act as the property value
+  get waterAmount() {
+    return this._waterAmount;
+  }
+
+  constructor(power) {
+    this._power = power;
+  }
+
+}
+
+// create the coffee machine
+let coffeeMachine = new CoffeeMachine(100);
+
+// Add water
+coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
+```
+			   
