@@ -1,6 +1,6 @@
 ### Extra Topic Require to understand Protected (simulated) and `private` in javascript classes
 			   
-***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
+*Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:*
 
 Source of below example - JavascriptInfo: [Click here](https://javascript.info/private-protected-properties-methods)
 			   
