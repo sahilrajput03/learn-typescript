@@ -1,4 +1,4 @@
-### Extra Toic Require to understand Protected (simulated) and `private` in javascript classes
+### Extra Topic Require to understand Protected (simulated) and `private` in javascript classes
 			   
 ***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
 
