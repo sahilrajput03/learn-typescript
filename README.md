@@ -210,6 +210,10 @@ Typescriptlang Playground of below code: [Click here](https://www.typescriptlang
 
 ![image](https://user-images.githubusercontent.com/31458531/206011636-b87f2e38-e70d-4d5f-943f-d6692cfb9abb.png)
 
+## 🥰 ❣ 💓 ❥ 💑 Thats how you fix a type error when you need need to access values defined on the `req` (`request`) object in express routes
+	
+![image](https://user-images.githubusercontent.com/31458531/207676081-ae1780cb-c92f-4850-86b4-616cb00cf999.png)
+
 ## protected (simulated) and `private` in javascript classes
 			   
 ***Protected Behaviour (simulated protected with `get` and `set` methods as JS doesn't have real protected feature) for the class proerties:***
