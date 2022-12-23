@@ -22,12 +22,8 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 
 Source: [Click here](https://www.typescriptlang.org/tsconfig#extends)
 	
-![image](https://user-images.githubusercontent.com/31458531/209340332-74a69f51-99bc-4536-8940-540007ccebf3.png)
+![image](https://user-images.githubusercontent.com/31458531/209340791-7771eeb2-c3ab-4b3e-91cd-25f0702bcfaa.png)
 
-	
-	
-	
-	
 - Optionla chaining:
 
 ```js
