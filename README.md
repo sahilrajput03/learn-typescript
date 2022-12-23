@@ -17,6 +17,17 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 	- Blog & Articles: [Click here](https://mariusschulz.com/blog)
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
 - **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
+
+- Using multiple typescript config files
+
+Source: [Click here](https://www.typescriptlang.org/tsconfig#extends)
+	
+![image](https://user-images.githubusercontent.com/31458531/209340332-74a69f51-99bc-4536-8940-540007ccebf3.png)
+
+	
+	
+	
+	
 - Optionla chaining:
 
 ```js
