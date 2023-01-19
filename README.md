@@ -33,7 +33,7 @@ type user = {
 }
 
 type roles = {
-    isAdmin: true;
+    isAdmin: boolean;
 }
 
 let k: user & roles = {
@@ -47,7 +47,7 @@ interface user {
 }
 
 interface roles {
-    isAdmin: true;
+    isAdmin: boolean;
 }
 
 let k: user & roles = {
