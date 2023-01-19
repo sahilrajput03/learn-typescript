@@ -24,6 +24,38 @@ Source: [Click here](https://www.typescriptlang.org/tsconfig#extends)
 	
 ![image](https://user-images.githubusercontent.com/31458531/209340791-7771eeb2-c3ab-4b3e-91cd-25f0702bcfaa.png)
 
+- Merging two types:
+	
+```ts
+// using `type`
+type user = {
+    name: string;
+}
+
+type roles = {
+    isAdmin: true;
+}
+
+let k: user & roles = {
+    name: 'sahil',
+    isAdmin: true
+}
+	
+// Using `interface`
+interface user {
+    name: string;
+}
+
+interface roles {
+    isAdmin: true;
+}
+
+let k: user & roles = {
+    name: 'sahil',
+    isAdmin: true
+}
+````
+
 - Optionla chaining:
 
 ```js
