@@ -39,12 +39,7 @@ let messagesData: MessagesType = [
 ]
 
 
-type matchListsType = Array<
-  {
-    participants: string[];
-    updated: number;
-  }
->
+type matchListsType = Array<{ participants: string[]; updated: number; }>
 
 let messagesWithMatchlistsData: MessagesType<matchListsType> = [
   {
