@@ -18,6 +18,42 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
 - **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
 
+- **Using generics with mongodb's documents:**
+
+Proposal to Eric question!
+
+typescript playground: [Click here](https://www.typescriptlang.org/play?#code/C4TwDgpgBAshDO8CGBzBAVcEA86oF4oBlYAJwEsA7FAbQF0A+AqAQVNKRGwCgooBvXnygBjAPaVgESQC4o8MlRQBuIXwC2SYCIAWAG3IK56VXwC+DVdz0RgUdQmRp4AES1I5cRKgxZmNIUFhUQkpWSgAch1yKGAdCFIICIAaNXstXQMjKBoIgFYAZgAWAE4AIyKAE2qAJgB2AA4ARkqABgaRVpKGktaAMwKUyMLSiurK+ua2jq6e-qKIuiEzbiXublBIdO0dABlDYHhMLcI2Di5AtLAkUmByEXJryXg5BQpqelNhAFcwSq0IJU5JRvuoygkvisGOsbHYHN5nAB1chxGAZfQHVzuTyOHxHLDYTQ7fYKfGQJiEAJ8ILCcSSaTAORRGJxBJJVLBImZA5yGj8KC-f5SIFQJoANjqRQKJSahVaNVaRWSUGut3ujyQz15ESauvKVVqjRa7U63V6KBKQwidRt+vGk2NMzNrQA1pa6FAzEtzKsgA)
+
+```ts
+type MessagesType<T = String[]> = Array<
+  {
+    content: string;
+    matchlist: T;
+  }>;
+
+let messagesData: MessagesType = [
+  {
+    content: 'hi there',
+    matchlist: ['5349b4ddd2781d08c09890f3', '5349b4ddd2781d08c09890f4']
+  }
+]
+
+
+type matchListsType = Array<
+  {
+    participants: string[];
+    updated: number;
+  }
+>
+
+let messagesWithMatchlistsData: MessagesType<matchListsType> = [
+  {
+    content: 'hi there',
+    matchlist: [{ updated: 1674391530204, participants: ['1119b4ddd2781d08c09890g9', '7779b4ddd2781d08c09890k9'] }]
+  }
+]
+```
+	
 - Using multiple typescript config files
 
 Source: [Click here](https://www.typescriptlang.org/tsconfig#extends)
