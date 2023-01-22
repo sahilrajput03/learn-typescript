@@ -17,16 +17,16 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 	- Blog & Articles: [Click here](https://mariusschulz.com/blog)
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
 - **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
-	- [Click here](https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335)
-	- [Click here](https://gist.github.com/sahilrajput03/e9c086784d704014929bdc811372cae9)
-	- [Click here](https://gist.github.com/sahilrajput03/8e4313f08db53b6ec1531e335cd91082)
-	- [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
-	- [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
 
 ## TODO: To merge gists
 	
-1. https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335
-2. TypeOf and ReturnType.: [Docs](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)
+- https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335
+- TypeOf and ReturnType.: [Docs](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)	
+- [Click here](https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335)
+- [Click here](https://gist.github.com/sahilrajput03/e9c086784d704014929bdc811372cae9)
+- [Click here](https://gist.github.com/sahilrajput03/8e4313f08db53b6ec1531e335cd91082)
+- [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
+- [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
 
 	
 ## Using default vaues in generics
