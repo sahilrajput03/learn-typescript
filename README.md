@@ -31,6 +31,7 @@ type MessagesType<T = String[]> = Array<
     matchlist: T;
   }>;
 
+// Simple
 let messagesData: MessagesType = [
   {
     content: 'hi there',
@@ -38,7 +39,7 @@ let messagesData: MessagesType = [
   }
 ]
 
-
+// With subdocuments type
 type matchListsType = Array<{ participants: string[]; updated: number; }>
 
 let messagesWithMatchlistsData: MessagesType<matchListsType> = [
