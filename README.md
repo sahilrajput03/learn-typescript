@@ -18,7 +18,7 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
 - **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
 
-- **Using generics with mongodb's documents:**
+### Using generics with mongodb's documents:
 
 Proposal to Eric question!
 
