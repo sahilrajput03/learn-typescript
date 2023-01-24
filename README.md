@@ -28,7 +28,12 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 - [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
 - [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
 
-	
+	## Open the real logic file when you ctrl+click on function of any library in typescript project
+
+	By default the .d.ts file is opened for the library function, but you can open the logic via clicking the respective logic file for currently openeed `.d.ts` file"
+
+	![image](https://user-images.githubusercontent.com/31458531/214367056-e6d1144f-069f-4497-913f-556b5beda941.png)
+
 ## Using default vaues in generics
 	
 ```ts
