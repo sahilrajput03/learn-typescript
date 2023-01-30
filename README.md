@@ -18,6 +18,13 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
 - **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
 
+	## we can type req.body in express like that
+
+	Source: [Click here](https://stackoverflow.com/a/55413670/10012446)
+	
+	![image](https://user-images.githubusercontent.com/31458531/215592538-b7941e08-38b3-4a87-8c70-102e5ab21185.png)
+
+	
 ## TODO: To merge gists
 	
 - https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335
