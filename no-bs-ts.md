@@ -412,7 +412,7 @@ sendEvent("checkout", { time: 20, user: "bob" });
 
 **#9**
 
-UTILITY TYPES: `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘 (**TIP: Record is used to type a object type amazingly. #Object type #type object** 
+UTILITY TYPES: `Partial`, `Requried`, `Record`, `Pick`, `Omit` ♥💕❤😘 (**TIP: `Record` is used to type a object type amazingly. #Object type #type object** 
 
 **Typescript Docs - Utility Types:** [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
