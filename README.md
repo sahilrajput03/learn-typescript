@@ -1,5 +1,8 @@
 # Learn Typescript
 
+- TODO: 1. [w3schools.com](https://www.w3schools.com/typescript/)
+- TODO: 2. Linkedin Typescript post by a person: [Click here](https://www.linkedin.com/posts/connectwithyounus_typescript-javascript-webdevelopment-activity-7042363174964072448-50Ou?utm_source=share&utm_medium=member_desktop)
+
 **Utility Types:**
 
 Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
