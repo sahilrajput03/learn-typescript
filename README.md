@@ -49,7 +49,9 @@ interface car {
 	bmw: string
 }
 
-type m1 = keyof car;
+type m1 = keyof typeof car;
+// or in older version we could do like that too:
+// type m1 = keyof car;
 
 let myhome: m1 = 'bmw'
 let yourHome: m1 = 'thisThrowsError'
