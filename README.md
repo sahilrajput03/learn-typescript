@@ -38,6 +38,16 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 - [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
 - [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
 
+## Get type from values of an array ♥💕❤😘
+	
+Source: [Click here](https://steveholgado.com/typescript-types-from-arrays/)
+
+```ts
+const animals = ['cat', 'dog', 'mouse'] as const
+type Animal = typeof animals[number]
+// type Animal = 'cat' | 'dog' | 'mouse'
+```
+
 ## Amazing/Awesome that we can remove a type from a union type as well
 
 Source: [Click here](https://www.youtube.com/watch?v=M4-Jl9JWGmo)
