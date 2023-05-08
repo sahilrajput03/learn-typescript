@@ -14,18 +14,21 @@
 	- [Click here](https://gist.github.com/sahilrajput03/8e4313f08db53b6ec1531e335cd91082)
 	- [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
 	- [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
+- **Best Typescript Courses:**
+- From Jack Herrington: [No BS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n) | My Notes: [Click here](no-bs-ts.md)
+- **Tips:**
+- From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
-**Utility Types:**
+## Utility Types
 
 Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
-- Awaited<Type>, Partial<Type>, Required<Type>, Readonly<Type>, Record<Keys, Type>, Pick<Type, Keys>, Omit<Type, Keys>, Exclude<UnionType, ExcludedMembers>, Extract<Type, Union>, NonNullable<Type>, Parameters<Type>, ConstructorParameters<Type>, ReturnType<Type>, InstanceType<Type>, ThisParameterType<Type>, OmitThisParameter<Type>, ThisType<Type>, Intrinsic String Manipulation Types, Uppercase<StringType>, Lowercase<StringType>, Capitalize<StringType>, Uncapitalize<StringType>
-
-**Best Typescript Courses:**
-- From Jack Herrington: [No BS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n) | My Notes: [Click here](no-bs-ts.md)
-
-**Tips:**
-- From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
+```bash
+Awaited<Type>, Partial<Type>, Required<Type>, Readonly<Type>, Record<Keys, Type>, Pick<Type, Keys>, Omit<Type, Keys>, Exclude<UnionType,
+ExcludedMembers>, Extract<Type, Union>, NonNullable<Type>, Parameters<Type>, ConstructorParameters<Type>, ReturnType<Type>, InstanceType<Type>,
+ThisParameterType<Type>, OmitThisParameter<Type>, ThisType<Type>, Intrinsic String Manipulation Types, Uppercase<StringType>, Lowercase<StringType>,
+Capitalize<StringType>, Uncapitalize<StringType>.	
+```
 
 ## We can type req.body in express like that
 
