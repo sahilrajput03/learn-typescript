@@ -1,6 +1,6 @@
 # Learn Typescript
 
-- **TODO: [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)**
+- **TODO: Read this book (and make notes in markdown in a new file in this repository) [EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)**
 - TODO: [w3schools.com](https://www.w3schools.com/typescript/)
 - TODO: Linkedin Typescript post by a person: [Click here](https://www.linkedin.com/posts/connectwithyounus_typescript-javascript-webdevelopment-activity-7042363174964072448-50Ou?utm_source=share&utm_medium=member_desktop)
 - TODO: Typescript fundamentals on egghead (7$/month): [Click here](https://egghead.io/lessons/typescript-use-the-optional-chaining-operator-in-typescript).
@@ -19,7 +19,7 @@
 
 Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
-> Awaited<Type>, Partial<Type>, Required<Type>, Readonly<Type>, Record<Keys, Type>, Pick<Type, Keys>, Omit<Type, Keys>, Exclude<UnionType, ExcludedMembers>, Extract<Type, Union>, NonNullable<Type>, Parameters<Type>, ConstructorParameters<Type>, ReturnType<Type>, InstanceType<Type>, ThisParameterType<Type>, OmitThisParameter<Type>, ThisType<Type>, Intrinsic String Manipulation Types, Uppercase<StringType>, Lowercase<StringType>, Capitalize<StringType>, Uncapitalize<StringType>
+- Awaited<Type>, Partial<Type>, Required<Type>, Readonly<Type>, Record<Keys, Type>, Pick<Type, Keys>, Omit<Type, Keys>, Exclude<UnionType, ExcludedMembers>, Extract<Type, Union>, NonNullable<Type>, Parameters<Type>, ConstructorParameters<Type>, ReturnType<Type>, InstanceType<Type>, ThisParameterType<Type>, OmitThisParameter<Type>, ThisType<Type>, Intrinsic String Manipulation Types, Uppercase<StringType>, Lowercase<StringType>, Capitalize<StringType>, Uncapitalize<StringType>
 
 **Best Typescript Courses:**
 - From Jack Herrington: [No BS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n) | My Notes: [Click here](no-bs-ts.md)
@@ -27,12 +27,14 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
-## we can type req.body in express like that
+## We can type req.body in express like that
 
 Source: [Click here](https://stackoverflow.com/a/55413670/10012446)
 	
 ![image](https://user-images.githubusercontent.com/31458531/215592538-b7941e08-38b3-4a87-8c70-102e5ab21185.png)
 
+	
+	
 ## Get type from values of an array ♥💕❤😘
 	
 Source: [Click here](https://steveholgado.com/typescript-types-from-arrays/)
