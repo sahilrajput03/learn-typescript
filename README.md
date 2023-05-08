@@ -1,7 +1,19 @@
 # Learn Typescript
 
-- TODO: 1. [w3schools.com](https://www.w3schools.com/typescript/)
-- TODO: 2. Linkedin Typescript post by a person: [Click here](https://www.linkedin.com/posts/connectwithyounus_typescript-javascript-webdevelopment-activity-7042363174964072448-50Ou?utm_source=share&utm_medium=member_desktop)
+- **TODO: [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)**
+- TODO: [w3schools.com](https://www.w3schools.com/typescript/)
+- TODO: Linkedin Typescript post by a person: [Click here](https://www.linkedin.com/posts/connectwithyounus_typescript-javascript-webdevelopment-activity-7042363174964072448-50Ou?utm_source=share&utm_medium=member_desktop)
+- TODO: Typescript fundamentals on egghead (7$/month): [Click here](https://egghead.io/lessons/typescript-use-the-optional-chaining-operator-in-typescript).
+	- Blog & Articles: [Click here](https://mariusschulz.com/blog)
+	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
+- TODO: To merge gists
+	- https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335
+	- TypeOf and ReturnType.: [Docs](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)	
+	- [Click here](https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335)
+	- [Click here](https://gist.github.com/sahilrajput03/e9c086784d704014929bdc811372cae9)
+	- [Click here](https://gist.github.com/sahilrajput03/8e4313f08db53b6ec1531e335cd91082)
+	- [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
+	- [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
 
 **Utility Types:**
 
@@ -15,28 +27,11 @@ Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.ht
 **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## we can type req.body in express like that
 
-- **TODO:** Typescript fundamentals on egghead (7$/month): [Click here](https://egghead.io/lessons/typescript-use-the-optional-chaining-operator-in-typescript).
-	- Blog & Articles: [Click here](https://mariusschulz.com/blog)
-	- Typescript Evolution Blog Series **Marius Schulz**: [Click here](https://mariusschulz.com/blog/series/typescript-evolution)
-- **TODO:** [Read this book EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)
-
-	## we can type req.body in express like that
-
-	Source: [Click here](https://stackoverflow.com/a/55413670/10012446)
+Source: [Click here](https://stackoverflow.com/a/55413670/10012446)
 	
-	![image](https://user-images.githubusercontent.com/31458531/215592538-b7941e08-38b3-4a87-8c70-102e5ab21185.png)
-
-	
-## TODO: To merge gists
-	
-- https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335
-- TypeOf and ReturnType.: [Docs](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html)	
-- [Click here](https://gist.github.com/sahilrajput03/abaac0d120f6e693a768dfd8ff7f7335)
-- [Click here](https://gist.github.com/sahilrajput03/e9c086784d704014929bdc811372cae9)
-- [Click here](https://gist.github.com/sahilrajput03/8e4313f08db53b6ec1531e335cd91082)
-- [Click here](https://gist.github.com/sahilrajput03/1945433e59a232be958b405a46661ca1)
-- [Click here](https://gist.github.com/sahilrajput03/34815090186109523e45682fa87de2cf)
+![image](https://user-images.githubusercontent.com/31458531/215592538-b7941e08-38b3-4a87-8c70-102e5ab21185.png)
 
 ## Get type from values of an array ♥💕❤😘
 	
