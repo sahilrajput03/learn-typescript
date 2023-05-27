@@ -19,6 +19,14 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## Geenrics with arrow functions
+
+Source: [1]()https://stackoverflow.com/a/45576880, [2](https://bobbyhadz.com/blog/typescript-arrow-function-generic)
+
+```typescript
+const foo = <T,>(x: T) => x;
+```
+
 ## Utility Types
 
 Docs: [Click here](https://www.typescriptlang.org/docs/handbook/utility-types.html)
