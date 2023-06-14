@@ -19,6 +19,16 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## Typing the value of `then` (cloned from learn-axios.md)
+
+- Typing the `.then` value:
+
+```ts
+axios.get().then((res: AxiosResponse<string>) => {
+	res.data // string
+}
+```
+
 ## Geenrics with arrow functions
 
 Source: [1]()https://stackoverflow.com/a/45576880, [2](https://bobbyhadz.com/blog/typescript-arrow-function-generic)
