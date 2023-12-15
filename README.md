@@ -19,6 +19,17 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## Getting key of enum?
+
+```ts
+enum Enum {
+  A,
+}
+ 
+let a = Enum.A; // 0
+let nameOfA = Enum[a]; // "A"
+```
+
 ## Typing the value of `then` (cloned from learn-axios.md)
 
 - Typing the `.then` value:
