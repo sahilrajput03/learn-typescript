@@ -19,7 +19,23 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
-## Getting key of enum?
+## Getting keys of plain object
+
+```ts
+// TODO:
+Save to learn typescript doc:
+
+let car = {
+    a: 10,
+    b: 20
+}
+
+let man: typeof car = {
+    // field names are typed here i.e, "a", "b"
+}
+```
+
+## Getting keys of enum?
 
 ```ts
 enum Enum {
