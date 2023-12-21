@@ -22,9 +22,6 @@
 ## Getting keys of plain object
 
 ```ts
-// TODO:
-Save to learn typescript doc:
-
 let car = {
     a: 10,
     b: 20
