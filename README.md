@@ -19,6 +19,17 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## Getting return type of a function
+
+```ts
+function myFunction(): string {
+  return "Hello, TypeScript!";
+}
+
+// Get the return type of myFunction
+type MyFunctionReturnType = ReturnType<typeof myFunction>;
+```
+
 ## Getting keys of plain object
 
 ```ts
@@ -53,7 +64,7 @@ axios.get().then((res: AxiosResponse<string>) => {
 }
 ```
 
-## Geenrics with arrow functions
+## Generics with arrow functions
 
 Source: [1]()https://stackoverflow.com/a/45576880, [2](https://bobbyhadz.com/blog/typescript-arrow-function-generic)
 
