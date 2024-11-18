@@ -19,6 +19,17 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
+## Quick Start with typscript
+
+```bash
+# install
+npm i -g ts-node ts-node-dev
+
+# usage
+ts-node-dev --cls --respawn 1.ts
+ts-node-dev --cls --respawn 2.ts
+```
+
 ## Getting return type of a function
 
 ```ts
