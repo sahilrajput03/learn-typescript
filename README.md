@@ -19,7 +19,7 @@
 - **Tips:**
 - From Jack Herrington: You can use `ctrl+k ctrl+i` to get the typescript popup in vscode.
 
-## Quick Start with typscript
+## ❤️ Quick Start with typscript
 
 ```bash
 # install
