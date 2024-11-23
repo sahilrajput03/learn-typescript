@@ -32,7 +32,25 @@ ts-node-dev --cls --respawn 2.ts
 
 ## 🙌🏻 Default Parameter Behavior in TypeScript (Overriding Default Options in TypeScript Functions)
 
-To test you can run this code in ts playground: [Click here](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA)
+**1. Basic Example**
+
+```ts
+// To make second argument/paramter optional you have to use `= {}`
+function typewriter(node: any, options: Options = {}) {
+// ...
+}
+typewriter(true) // now the second argument will be {}
+
+
+
+// ANOTHER EXAMPLE
+function typewriter(node: any, options: Options = { refresh: true }) {
+// ...
+}
+typewriter(true) // now the second argument will be { refresh: true }
+```
+
+**2. Advance Example ([playground](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA))**
 
 ```ts
 type Options = { speed?: number, total?: number };
