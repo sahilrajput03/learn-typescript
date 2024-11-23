@@ -30,6 +30,22 @@ ts-node-dev --cls --respawn 1.ts
 ts-node-dev --cls --respawn 2.ts
 ```
 
+## Default Parameter Behavior in TypeScript (Overriding Default Options in TypeScript Functions)
+
+To test you can run this code in ts playground: [Click here](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKFEiIQKnFCFZ4CEYligBGVuy7cr1gAzWRFOAvRWzhIhQAmOw4eChcAkQBKXHEoOKhZVDQkbggAOm4kAHMtc2Jgh0jxcWFi0Eg1DW1raIB6WqgguPCocXLVdU1GLVtcYTqG3ptXVvbKrp7TfD8KAFYoqHqoWdZh6yA)
+
+```ts
+type Options = { speed?: number, total?: number };
+function typewriter(node: any, { speed = 1, total = 101 }: Options = { speed: 2, total: 102 }) {
+    console.log(speed, total)
+
+}
+
+typewriter(1) // 2,  102 
+typewriter(1, {}) // 1,  101 
+typewriter(1, { speed: 5 }) // 5,  101
+```
+
 ## Getting return type of a function
 
 ```ts
