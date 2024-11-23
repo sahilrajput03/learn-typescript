@@ -32,6 +32,8 @@ ts-node-dev --cls --respawn 2.ts
 
 ## 🙌🏻 Default Parameter Behavior in TypeScript (Overriding Default Options in TypeScript Functions)
 
+Date: 23 November, 2024
+
 **1. Basic Example**
 
 ```ts
