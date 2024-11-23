@@ -32,18 +32,18 @@ ts-node-dev --cls --respawn 2.ts
 
 ## Default Parameter Behavior in TypeScript (Overriding Default Options in TypeScript Functions)
 
-To test you can run this code in ts playground: [Click here](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKFEiIQKnFCFZ4CEYligBGVuy7cr1gAzWRFOAvRWzhIhQAmOw4eChcAkQBKXHEoOKhZVDQkbggAOm4kAHMtc2Jgh0jxcWFi0Eg1DW1raIB6WqgguPCocXLVdU1GLVtcYTqG3ptXVvbKrp7TfD8KAFYoqHqoWdZh6yA)
+To test you can run this code in ts playground: [Click here](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA)
 
 ```ts
 type Options = { speed?: number, total?: number };
-function typewriter(node: any, { speed = 1, total = 101 }: Options = { speed: 2, total: 102 }) {
+function typewriter(arg1: any, { speed = 1, total = 101 }: Options = { speed: 2, total: 102 }) {
     console.log(speed, total)
 
 }
 
-typewriter(1) // 2,  102 
-typewriter(1, {}) // 1,  101 
-typewriter(1, { speed: 5 }) // 5,  101
+typewriter(true) // 2,  102 
+typewriter(true, {}) // 1,  101 
+typewriter(true, { speed: 5 }) // 5,  101
 ```
 
 ## Getting return type of a function
