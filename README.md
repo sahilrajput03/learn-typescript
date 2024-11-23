@@ -50,7 +50,21 @@ function typewriter(node: any, options: Options = { refresh: true }) {
 typewriter(true) // now the second argument will be { refresh: true }
 ```
 
-**2. Advance Example ([playground](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA))**
+**2. ❤️ Experienced Programmer Example (most readable for usage of config objects / optional objects ):**
+
+```ts
+type Options = { speed?: number };
+function typewriter(node: any, options: Options = {}) {
+	const { speed = 1 } = options;
+    console.log(speed)
+}
+
+typewriter(true) // 1
+typewriter(true, {}) // 1
+typewriter(true, {speed: 2}) // 2
+```
+
+**3. A bit complicated example for inline usage of optional config objects ([playground](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA))**
 
 ```ts
 type Options = { speed?: number, total?: number };
