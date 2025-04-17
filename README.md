@@ -34,25 +34,7 @@ ts-node-dev --cls --respawn 2.ts
 
 Date: 23 November, 2024
 
-**1. Basic Example**
-
-```ts
-// To make second argument/paramter optional you have to use `= {}`
-function typewriter(node: any, options: Options = {}) {
-// ...
-}
-typewriter(true) // now the second argument will be {}
-
-
-
-// ANOTHER EXAMPLE
-function typewriter(node: any, options: Options = { refresh: true }) {
-// ...
-}
-typewriter(true) // now the second argument will be { refresh: true }
-```
-
-**2. ❤️ Experienced Programmer Example (most readable for usage of config objects / optional objects ):**
+**1. ❤️ Experienced Programmer Example (most readable for usage of config objects / optional objects ):**
 
 ```ts
 type Options = { speed?: number };
@@ -66,7 +48,7 @@ typewriter(true, {}) // 1
 typewriter(true, {speed: 2}) // 2
 ```
 
-**3. A bit complicated example for inline usage of optional config objects ([playground](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA))**
+**2. A bit complicated example for inline usage of optional config objects ([playground](https://www.typescriptlang.org/play/?#code/C4TwDgpgBA8mwEsD2A7AzlAvFA3lNkEAJgPwBcUKArgLYBGEATgDRTBLACGANuZbQ0ZQAvgG4AUADMqKAMaJUbcBADujBMCYAKTowDmARgqcUIVngIRiWKAdbsu3GwYAMBkRTgL0Ni4SIUAEz2HDwUroEiAJS44lDxULKoaEjcEAB03Eh6WpbEIY5R4uLCxaCQahrawIxUEDEA9A1QwfERUOLlquqajFo1debCjc12bW4dXZW9-bUQ5vj+FACs0VBNUMustm5AA))**
 
 ```ts
 type Options = { speed?: number, total?: number };
