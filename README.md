@@ -32,7 +32,8 @@ ts-node-dev --cls --respawn 2.ts
 
 ## 💙 Use `satisfies` instead of `:` (color) or `as` operator to ensure type checking without --- type narrowing or change the inferred type
 
-💙 Example from nodejs docs: [Click here](https://nodejs.org/en/learn/typescript/introduction)
+- Source: 💙 ChatGPT's Explanation: [Click here](https://chatgpt.com/c/68516160-4490-8007-8bb5-8290b23d4a1c)
+- Example from nodejs docs: [Click here](https://nodejs.org/en/learn/typescript/introduction)
 
 ```ts
 type User = {
