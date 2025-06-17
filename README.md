@@ -30,6 +30,22 @@ ts-node-dev --cls --respawn 1.ts
 ts-node-dev --cls --respawn 2.ts
 ```
 
+## 💙 Use `satisfies` instead of `:` (color) or `as` operator to ensure type checking without --- type narrowing or change the inferred type
+
+💙 Example from nodejs docs: [Click here](https://nodejs.org/en/learn/typescript/introduction)
+
+```ts
+type User = {
+  name: string;
+  age: number;
+};
+
+const justine = {
+  name: 'Justine',
+  age: 23,
+} satisfies User
+```
+
 ## 🙌🏻 Default Parameter Behavior in TypeScript (Overriding Default Options in TypeScript Functions)
 
 Date: 23 November, 2024
