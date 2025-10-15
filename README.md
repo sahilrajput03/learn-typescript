@@ -1,5 +1,6 @@
 # Learn Typescript
 
+- [TODO_CHECK] TypeScript-Node-Starter: [nodejsapps/TypeScript-Node-Starter](https://github.com/nodejsapps/TypeScript-Node-Starter)
 - **TODO: Read this book (and make notes in markdown in a new file in this repository) [EffectiveTypescript-62 Specific Ways to Improve Your Typescript.pdf](./EffectiveTypescript-62%20Specific%20Ways%20to%20Improve%20Your%20Typescript.pdf)**
 - TODO: [w3schools.com/typescript](https://www.w3schools.com/typescript/)
 - TODO: Linkedin Typescript post by a person: [Click here](https://www.linkedin.com/posts/connectwithyounus_typescript-javascript-webdevelopment-activity-7042363174964072448-50Ou?utm_source=share&utm_medium=member_desktop)
